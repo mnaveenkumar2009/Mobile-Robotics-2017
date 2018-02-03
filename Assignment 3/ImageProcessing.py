@@ -3,11 +3,11 @@ import numpy as np
 import cv2
 import math
 x = int(input("where do u want to place brave ?\n"))
-I = cv2.imread("../data/brave.jpg")
+I = cv2.imread("Images/brave.jpg")
 
 # her arrow: x 172,y 150     deer head: x 379 y 185
 #cv2.imshow('Image', I)
-I2 = cv2.imread("../data/deer.jpg")
+I2 = cv2.imread("Images/deer.jpg")
 
 rows,cols,channels = I.shape
 roi = I2[120:rows+120 ,x:cols+x]
